@@ -24,8 +24,8 @@ const BrandType = new GraphQLObjectType({
     name: 'Brand',
     fields: () => ({
         id: { type: new GraphQLNonNull(GraphQLID) },
-        title: { type: new GraphQLNonNull(GraphQLString) },
-        homeland: { type: new GraphQLNonNull(GraphQLString) },
+        title: { type: GraphQLString },
+        homeland: { type: GraphQLString },
     })
 });
 
@@ -110,8 +110,8 @@ const Mutation = new GraphQLObjectType({
             type: BrandType,
             args: {
                 id: { type: new GraphQLNonNull(GraphQLID) },
-                title: { type: new GraphQLNonNull(GraphQLString) },
-                homeland: { type: new GraphQLNonNull(GraphQLString) },
+                title: { type: GraphQLString },
+                homeland: { type: GraphQLString },
             },
             resolve(parent, args) {
                 return axios.post('http://localhost:3000/brands', {
