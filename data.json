@@ -1,0 +1,49 @@
+{
+  "products": [
+    {
+      "id": "c1",
+      "title": "Battery",
+      "price": 30,
+      "unitsInStock": 55
+    },
+    {
+      "id": "c2",
+      "title": "Touchpad",
+      "price": 50,
+      "unitsInStock": 65
+    },
+    {
+      "id": "x1",
+      "title": "Updated Product 4",
+      "price": 888,
+      "unitsInStock": 25
+    }
+  ],
+  "brands": [
+    {
+      "id": "b1",
+      "title": "Apple",
+      "homeland": "USA"
+    },
+    {
+      "id": "b2",
+      "title": "HP",
+      "homeland": "USA"
+    },
+    {
+      "id": "b3",
+      "title": "Samsung",
+      "homeland": "Korea"
+    },
+    {
+      "id": "b4",
+      "title": "Huawei",
+      "homeland": "China"
+    },
+    {
+      "id": "126",
+      "title": "New Brand 2",
+      "homeland": "Belgium"
+    }
+  ]
+}
